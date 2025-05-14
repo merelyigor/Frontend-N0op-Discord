@@ -127,3 +127,12 @@ fabric.properties
 .idea/*
 /har4daun/node_modules/
 /har4daun/dist/
+
+/noopOG/node_modules/
+/noopOG/dist/
+
+/merelyigor/node_modules/
+/merelyigor/dist/
+
+/romashka/node_modules/
+/romashka/dist/
