@@ -125,6 +125,7 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea
 .idea/*
+
 /merelyigor/node_modules/
 /merelyigor/dist/
 
