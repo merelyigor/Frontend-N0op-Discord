@@ -125,3 +125,5 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea
 .idea/*
+/noopOG/node_modules/
+/noopOG/dist/
