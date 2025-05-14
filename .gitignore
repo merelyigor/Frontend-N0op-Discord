@@ -127,3 +127,9 @@ fabric.properties
 .idea/*
 /noopOG/node_modules/
 /noopOG/dist/
+
+/merelyigor/node_modules/
+/merelyigor/dist/
+
+/romashka/node_modules/
+/romashka/dist/
