@@ -8,6 +8,8 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:  # 👈 Додано — дозволяє писати в репозиторій
+      contents: write
 
     steps:
       - name: Checkout repo
