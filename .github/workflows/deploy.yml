@@ -44,10 +44,16 @@ jobs:
 
       - name: Prepare publish directory
         run: |
-          mkdir public
+          mkdir -p public/merelyigor
           cp -r merelyigor/dist public/merelyigor/dist
+          
+          mkdir -p public/noopOG
           cp -r noopOG/dist public/noopOG/dist
+          
+          mkdir -p public/romashka
           cp -r romashka/dist public/romashka/dist
+          
+          mkdir -p public/Bobrado
           cp -r Bobrado/dist public/Bobrado/dist
 
       - name: Deploy to GitHub Pages
