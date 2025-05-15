@@ -26,6 +26,8 @@ jobs:
           npm install
           npm run build
           cp index.html dist/index.html  # ⬅️ кладемо index.html в dist
+          mkdir -p public/merelyigor/dist
+          cp -r merelyigor/dist public/merelyigor/dist
 
       - name: Build noopOG
         working-directory: ./noopOG
@@ -33,6 +35,8 @@ jobs:
           npm install
           npm run build
           cp index.html dist/index.html
+          mkdir -p public/noopOG
+          cp -r noopOG/dist public/noopOG/dist
 
       - name: Build romashka
         working-directory: ./romashka
@@ -40,6 +44,8 @@ jobs:
           npm install
           npm run build
           cp index.html dist/index.html
+          mkdir -p public/romashka
+          cp -r romashka/dist public/romashka/dist
 
       - name: Build Bobrado
         working-directory: ./Bobrado
@@ -47,18 +53,6 @@ jobs:
           npm install
           npm run build
           cp index.html dist/index.html
-
-      - name: Prepare publish directory
-        run: |
-          mkdir -p public/merelyigor
-          cp -r merelyigor/dist public/merelyigor/dist
-          
-          mkdir -p public/noopOG
-          cp -r noopOG/dist public/noopOG/dist
-          
-          mkdir -p public/romashka
-          cp -r romashka/dist public/romashka/dist
-          
           mkdir -p public/Bobrado
           cp -r Bobrado/dist public/Bobrado/dist
 
