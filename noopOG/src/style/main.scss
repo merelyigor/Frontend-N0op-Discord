@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Raleway:ital@0;1&family=Russo+One&display=swap');
+@charset "UTF-8";
 
-* {
-  font-family: "Montserrat", sans-serif;
-}
+@import "parts/variables";
+@import "parts/reset";
+@import "parts/header";
 
-body {
-  background: #bd1aa7;
-}
+
