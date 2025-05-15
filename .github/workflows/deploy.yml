@@ -8,7 +8,7 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:  # 👈 Додано — дозволяє писати в репозиторій
+    permissions:
       contents: write
 
     steps:
@@ -25,24 +25,28 @@ jobs:
         run: |
           npm install
           npm run build
+          cp index.html dist/index.html  # ⬅️ кладемо index.html в dist
 
       - name: Build noopOG
         working-directory: ./noopOG
         run: |
           npm install
           npm run build
+          cp index.html dist/index.html
 
       - name: Build romashka
         working-directory: ./romashka
         run: |
           npm install
           npm run build
+          cp index.html dist/index.html
 
       - name: Build Bobrado
         working-directory: ./Bobrado
         run: |
           npm install
           npm run build
+          cp index.html dist/index.html
 
       - name: Prepare publish directory
         run: |
