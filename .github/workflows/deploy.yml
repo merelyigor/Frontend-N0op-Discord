@@ -25,36 +25,39 @@ jobs:
         run: |
           npm install
           npm run build
-          cp index.html dist/index.html  # ⬅️ кладемо index.html в dist
-          mkdir -p public/merelyigor/dist
-          cp -r merelyigor/dist public/merelyigor/dist
-
+          cp index.html dist/index.html
       - name: Build noopOG
         working-directory: ./noopOG
         run: |
           npm install
           npm run build
           cp index.html dist/index.html
-          mkdir -p public/noopOG
-          cp -r noopOG/dist public/noopOG/dist
-
       - name: Build romashka
         working-directory: ./romashka
         run: |
           npm install
           npm run build
           cp index.html dist/index.html
-          mkdir -p public/romashka
-          cp -r romashka/dist public/romashka/dist
-
       - name: Build Bobrado
         working-directory: ./Bobrado
         run: |
           npm install
           npm run build
           cp index.html dist/index.html
+
+      - name: Prepare publish directory
+        run: |
+          mkdir -p public/merelyigor
+          cp -r merelyigor/dist/* public/merelyigor/
+
+          mkdir -p public/noopOG
+          cp -r noopOG/dist/* public/noopOG/
+
+          mkdir -p public/romashka
+          cp -r romashka/dist/* public/romashka/
+
           mkdir -p public/Bobrado
-          cp -r Bobrado/dist public/Bobrado/dist
+          cp -r Bobrado/dist/* public/Bobrado/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
