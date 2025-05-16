@@ -12,13 +12,13 @@ body {
     margin: 0 auto;
     width: 1000px;
     height: auto;
-    background: royalblue
+    background: #a82441
 }
 
 header {
     padding: 10px;
     border-radius: 15px;
-    background: #02ff3d;
+    background: #a266cc;
     justify-content: space-between;
     display: flex;
     align-items: center;
