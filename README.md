@@ -9,4 +9,4 @@
 
 ## [romashka](https://merelyigor.github.io/Frontend-N0op-Discord/romashka/)
 
-## [harchick](https://merelyigor.github.io/Frontend-N0op-Discord/harchick/)
+## [har4ick](https://merelyigor.github.io/Frontend-N0op-Discord/har4ick/)
