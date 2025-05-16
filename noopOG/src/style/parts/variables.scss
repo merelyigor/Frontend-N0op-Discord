@@ -1,0 +1,72 @@
+/*************** basic constants ****************/
+$font-size-base: 14px !default;
+$font-family-base: Arial, sans-serif !default;
+$container-size-base: 1170px !default;
+
+/*************** color constants **************/
+$White: #FFF !default;
+$Black: #000 !default;
+$Grey: #F5F5F5FF !default;
+$Grey-Grey: #C4C4C4 !default;
+$Red: #FF3334FF !default;
+
+/*************** function ****************/
+/*
+* Grid breakpoints
+* Define the minimum dimensions at which your layout will change,
+* adapting to different screen sizes, for use in media queries.
+*/
+
+$grid-breakpoints: (
+        xs: 0,
+        ss: 360px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1170px,
+        xxl: 1367px,
+        max: 99999px
+) !default;
+
+/*
+* Grid containers
+* Define the maximum width of `.container` for different screen sizes.
+*/
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1260px,
+) !default;
+
+// Functions (media-breakpoint-up)
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name); // отримуємо розмір для breakpoint з мапи
+  @if $min != null {
+    @if $min == 0 {
+      @content; // Для xs без медіа-запиту
+    } @else {
+      @media (min-width: $min) { // генеруємо медіа-запит з мінімальною шириною
+        @content; // вставляємо вміст міксіну
+      }
+    }
+  }
+}
+
+@mixin media-between($min, $max, $breakpoints: $grid-breakpoints) {
+  $min-value: map-get($breakpoints, $min);
+  $max-value: map-get($breakpoints, $max);
+  @if $min-value != null and $max-value != null {
+    @media (min-width: $min-value) and (max-width: $max-value) {
+      @content;
+    }
+  }
+}
+
+@function font-scale($px) {
+  @return calc(#{$px} * var(--font-scale));
+}
+
+
+
