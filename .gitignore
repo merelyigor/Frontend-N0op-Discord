@@ -39,7 +39,7 @@ Temporary Items
 .idea/*
 
 ### CUSTOM ###
-/Bobrado/node_modules/
+/bobrado/node_modules/
 #/Bobrado/dist/
 
 /noopOG/node_modules/
