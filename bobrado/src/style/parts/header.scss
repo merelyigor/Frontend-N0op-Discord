@@ -38,15 +38,20 @@ header {
       }
 
       &__lang_switcher {
-
+        cursor: pointer;
         display: flex;
         align-items: center;
-        color: $Red;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 100%;
-        text-align: center;
+
         position: relative;
+        span {
+          cursor: pointer;
+          color: $Red;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 100%;
+          text-align: center;
+          user-select: none;
+        }
 
         &:after {
           content: "";
@@ -55,12 +60,12 @@ header {
           margin-left: 8px;
           border-bottom: 2px solid $Red;
           border-right: 2px solid $Red;
-          transform:rotate(45deg);
+          transform: rotate(45deg);
           margin-top: -10%;
+          cursor: pointer;
         }
 
         &__popup {
-          display: flex;
           position: absolute;
           top: 15px;
           left: -50%;
@@ -69,7 +74,22 @@ header {
           background-color: $White;
           z-index: 1;
           border-radius: 4px;
-          box-shadow: 0 2px 11px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.05);
+
+          &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: $White;   // $White //
+            position: absolute;
+            top: -10px;
+            left: 25%;
+            transform: rotate(45deg);
+            box-shadow: -3px 0 6px -5px rgba(0, 0, 0, 0.2), // ліва грань//
+            0 -3px 6px -5px rgba(0, 0, 0, 0.2); //права грань//
+
+          }
+
           &__item {
             margin-right: 10px;
             color: $Black;
@@ -77,10 +97,17 @@ header {
             font-weight: 700;
             line-height: 100%;
             text-align: center;
+            position: relative;
+
+            &.active {
+              color: $Red;
+              pointer-events: none;
+              cursor: default;
             }
+
+          }
           }
         }
       }
-
     }
   }

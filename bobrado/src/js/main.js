@@ -1,3 +1,11 @@
+console.log('++++++START JS PROJECT++++++');
+
 import '../style/main.scss';
 
-console.log('Привіт, нуп каже,що Ігарнюсік даун');
+import {headerPopup} from "./parts/header";
+document.addEventListener('DOMContentLoaded', function()  {
+
+    headerPopup();
+})
+
+console.log('++++++END JS PROJECT+++++++');
