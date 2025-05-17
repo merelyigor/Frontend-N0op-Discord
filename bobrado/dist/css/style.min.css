@@ -94,14 +94,19 @@ header .container .menu__top__button {
   background: whitesmoke;
 }
 header .container .menu__top__lang_switcher {
+  cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+}
+header .container .menu__top__lang_switcher span {
+  cursor: pointer;
   color: #ff3334;
   font-size: 14px;
   font-weight: 700;
   line-height: 100%;
   text-align: center;
-  position: relative;
+  user-select: none;
 }
 header .container .menu__top__lang_switcher:after {
   content: "";
@@ -112,9 +117,9 @@ header .container .menu__top__lang_switcher:after {
   border-right: 2px solid #ff3334;
   transform: rotate(45deg);
   margin-top: -10%;
+  cursor: pointer;
 }
 header .container .menu__top__lang_switcher__popup {
-  display: flex;
   position: absolute;
   top: 15px;
   left: -50%;
@@ -123,7 +128,18 @@ header .container .menu__top__lang_switcher__popup {
   background-color: #FFF;
   z-index: 1;
   border-radius: 4px;
-  box-shadow: 0 2px 11px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.05);
+}
+header .container .menu__top__lang_switcher__popup:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  transform: rotate(45deg);
+  box-shadow: -3px 0 6px -5px rgba(0, 0, 0, 0.2), 0 -3px 6px -5px rgba(0, 0, 0, 0.2);
 }
 header .container .menu__top__lang_switcher__popup__item {
   margin-right: 10px;
@@ -132,4 +148,18 @@ header .container .menu__top__lang_switcher__popup__item {
   font-weight: 700;
   line-height: 100%;
   text-align: center;
+  position: relative;
+}
+header .container .menu__top__lang_switcher__popup__item.active {
+  color: #ff3334;
+  pointer-events: none;
+  cursor: default;
+}
+
+section.hero {
+  width: 100%;
+  height: 760px;
+  max-height: 760px;
+  background: url(../19f118724d19dfacd6fa.jpeg) no-repeat top center;
+  background-size: cover;
 }
