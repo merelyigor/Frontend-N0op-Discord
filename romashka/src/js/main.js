@@ -1,3 +1,11 @@
-import "../style/main.scss";
+console.log('+++++++++++ START JS PROJECT +++++++++++');
 
-console.log('123');
+import "../style/main.scss";
+import {headerPopup} from "./parts/header";
+
+document.addEventListener("DOMContentLoaded", function () {
+    headerPopup();
+})
+
+
+console.log('+++++++++++ END JS PROJECT +++++++++++');
