@@ -5,7 +5,7 @@
   width: 100%;
   height: 760px;
   max-height: 760px;
-  background: url(../img/gogogogog-block.jpeg) no-repeat top center;
+  background: url(../img/hero-block.jpeg) no-repeat top center;
   background-size: cover;
 
   &__container {
@@ -39,10 +39,10 @@
   &__right {
     width: 45%;
     max-width: 380px;
-    align-self: start;
+    align-self: flex-start;
     margin-top: 100px;
     border-radius: 7px;
-    background: $White;
+    background: rgb(255, 255, 255);
     padding: 60px 40px;
 
     &__login_title {
@@ -59,7 +59,17 @@
       margin-bottom: 40px;
     }
 
-    #login, #password {
+    #login {
+      border: none;
+      color: $Black;
+      font-size: font-scale(20px);
+      font-weight: 400;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    #password {
+      border: none;
       border: none;
       color: $Black;
       font-size: font-scale(20px);
@@ -76,7 +86,6 @@
       }
 
       label {
-        margin-right: 15px;
         display: flex;
         width: 35px;
         height: 20px;
@@ -85,6 +94,7 @@
         cursor: pointer;
         vertical-align: middle;
         position: relative;
+        margin-right: 15px;
       }
 
       input[type="checkbox"]:checked + label:after {
@@ -101,7 +111,7 @@
     }
 
 
-    &__pass_title {
+    &__login_title {
       display: flex;
       margin-bottom: 10px;
       color: $Black;
@@ -110,6 +120,7 @@
       line-height: 100%;
       text-align: left;
     }
+
     &__t_c_text {
       color: $Black;
       font-size: font-scale(14px);
@@ -120,8 +131,8 @@
 
     &__button {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       width: 100%;
       height: 55px;
       margin-top: 85px;

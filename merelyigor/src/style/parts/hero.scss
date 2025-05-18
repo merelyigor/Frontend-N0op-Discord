@@ -5,7 +5,7 @@
   width: 100%;
   height: 760px;
   max-height: 760px;
-  background: url(../img/gogogogog-block.jpeg) no-repeat top center;
+  background: url(../img/hero-block.jpeg) no-repeat top center;
   background-size: cover;
 
   &__container {
@@ -39,7 +39,7 @@
   &__right {
     width: 45%;
     max-width: 380px;
-    align-self: start;
+    align-self: flex-start;
     margin-top: 100px;
     border-radius: 7px;
     background: $White;
@@ -76,7 +76,6 @@
       }
 
       label {
-        margin-right: 15px;
         display: flex;
         width: 35px;
         height: 20px;
@@ -85,10 +84,11 @@
         cursor: pointer;
         vertical-align: middle;
         position: relative;
+        margin-right: 15px;
       }
 
       input[type="checkbox"]:checked + label:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 4px;
         top: 0;
@@ -110,6 +110,7 @@
       line-height: 100%;
       text-align: left;
     }
+
     &__t_c_text {
       color: $Black;
       font-size: font-scale(14px);
@@ -120,12 +121,12 @@
 
     &__button {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       width: 100%;
       height: 55px;
       margin-top: 85px;
-      background: $Red;
+      background-color: $Red;
       border: none;
       border-radius: 6px;
       color: $White;
