@@ -1,7 +1,139 @@
-section.hero {
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 760px;
   max-height: 760px;
   background: url(../img/hero-block.jpeg) no-repeat top center;
   background-size: cover;
+
+  &__container {
+    width: $container-size-base;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 55%;
+    align-self: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: font-scale(72px);
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $White;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: font-scale(22px);
+      line-height: 110%;
+      color: $White;
+    }
+  }
+
+  &__right {
+    width: 45%;
+    max-width: 380px;
+    align-self: flex-start;
+    margin-top: 100px;
+    border-radius: 7px;
+    background: $White;
+    padding: 60px 40px;
+
+    &__login_title {
+      color: $Black;
+      font-size: font-scale(24px);
+      font-weight: 700;
+      line-height: 100%;
+      text-align: left;
+      margin-bottom: 60px;
+    }
+
+    hr {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+
+    #login, #password {
+      border: none;
+      color: $Black;
+      font-size: font-scale(20px);
+      font-weight: 400;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    .custom-checkbox {
+      display: flex;
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      label {
+        display: flex;
+        width: 35px;
+        height: 20px;
+        border: 2px solid $Grey-Grey;
+        background-color: $White;
+        cursor: pointer;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 15px;
+      }
+
+      input[type="checkbox"]:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 0;
+        width: 6px;
+        height: 12px;
+        border: solid $Red;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+
+
+    &__pass_title {
+      display: flex;
+      margin-bottom: 10px;
+      color: $Black;
+      font-size: font-scale(14px);
+      font-weight: 400;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    &__t_c_text {
+      color: $Black;
+      font-size: font-scale(14px);
+      font-weight: 400;
+      line-height: 140%;
+      text-align: left;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 55px;
+      margin-top: 85px;
+      background-color: $Red;
+      border: none;
+      border-radius: 6px;
+      color: $White;
+      font-size: font-scale(18px);
+      font-weight: 700;
+      line-height: 100%;
+      text-align: center;
+    }
+  }
 }
