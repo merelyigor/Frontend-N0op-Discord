@@ -57,6 +57,11 @@
     hr {
       margin-top: 15px;
       margin-bottom: 40px;
+
+      &.error {
+        border: 1px solid $Red;
+        animation: shake 2s ease;
+      }
     }
 
     #login, #password {
@@ -66,6 +71,7 @@
       font-weight: 400;
       line-height: 100%;
       text-align: left;
+
     }
 
     .custom-checkbox {
@@ -85,6 +91,11 @@
         vertical-align: middle;
         position: relative;
         margin-right: 15px;
+
+        &.error {
+          border: 2px solid $Red;
+          animation: shake 0.2s ease;
+        }
       }
 
       input[type="checkbox"]:checked + label:after {
@@ -131,6 +142,7 @@
       font-weight: 700;
       line-height: 100%;
       text-align: center;
+      cursor: pointer;
     }
   }
 }
