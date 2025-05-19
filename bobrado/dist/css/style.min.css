@@ -211,6 +211,10 @@ header .container .menu__top__lang_switcher__popup__item.active {
   margin-top: 15px;
   margin-bottom: 40px;
 }
+.hero__right hr.error {
+  border: 1px solid #ff3334;
+  animation: shake 2s ease;
+}
 .hero__right #login, .hero__right #password {
   border: none;
   color: #000;
@@ -235,6 +239,10 @@ header .container .menu__top__lang_switcher__popup__item.active {
   cursor: pointer;
   vertical-align: middle;
   position: relative;
+}
+.hero__right .custom-checkbox label.error {
+  border: 2px solid #ff3334;
+  animation: shake 2s ease;
 }
 .hero__right .custom-checkbox input[type=checkbox]:checked + label:after {
   content: "";
@@ -278,4 +286,26 @@ header .container .menu__top__lang_switcher__popup__item.active {
   font-weight: 700;
   line-height: 100%;
   text-align: center;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
