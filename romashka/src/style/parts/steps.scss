@@ -5,10 +5,21 @@
   justify-content: space-between;
   margin: 0 auto;
 
+  @include media-between(xs, xl) {
+    width: 100%;
+    flex-direction: column;
+  }
+
   &__step {
     width: 25%;
     padding: 25px;
     border-right: 1px solid $Grey-Grey;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid $Grey-Grey;
+    }
 
     &:last-child {
       border: none;

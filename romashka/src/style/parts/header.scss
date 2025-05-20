@@ -12,7 +12,7 @@ header {
     padding: 20px 0;
     align-items: center;
 
-    @include media-between(sx, xl) {
+    @include media-between(xs, xl) {
       width: 100%;
       margin: 0 20px;
     }
@@ -41,6 +41,8 @@ header {
         text-align: center;
         border-radius: 4px;
         background: $Grey;
+        pointer-events: none;
+        user-select: none;
 
         @include media-between(xs, xl) {
           width: 90px;
@@ -85,6 +87,10 @@ header {
           border-radius: 4px;
           box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.05);
 
+          @include media-between(xs, xl) {
+            left: -200%;
+          }
+
           &:before {
             content: "";
             width: 20px;
@@ -95,6 +101,9 @@ header {
             left: 25%;
             transform: rotate(45deg);
             box-shadow: -3px 0 6px -5px rgba(0, 0, 0, 0.2), 0 -3px 6px -5px rgba(0, 0, 0, 0.2);
+            @include media-between(xs, xl) {
+              left: 65%;
+            }
           }
 
           &__item {
