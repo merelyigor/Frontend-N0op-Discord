@@ -217,7 +217,7 @@ header .container .menu__top__lang_switcher__popup__item.active {
 }
 .hero__left h1 {
   font-weight: 700;
-  font-size: calc(72px * var(--font-scale));
+  font-size: calc(60px * var(--font-scale));
   line-height: 100%;
   text-transform: uppercase;
   color: #FFF;
