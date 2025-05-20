@@ -32,3 +32,6 @@ export function formSendCheckCheckbox() {
             }, 2000)
         })
 }
+
+
+

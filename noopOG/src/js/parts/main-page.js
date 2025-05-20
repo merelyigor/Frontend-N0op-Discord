@@ -32,4 +32,5 @@ export function formSendCheckCheckbox() {
                 label.classList.remove("error");
             }, 2000)
         })
+
 }
