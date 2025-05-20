@@ -8,16 +8,30 @@
   background: url(../img/hero-block.jpeg) no-repeat top center;
   background-size: cover;
 
+  @include media-between(xs, xl) {
+    height: 100%;
+    max-height: 100%;
+    padding: 50px 20px 65px;
+  }
+
   &__container {
     width: $container-size-base;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    @include media-between(xs, xl) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 55%;
     align-self: center;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+    }
 
     h1 {
       font-weight: 700;
@@ -26,6 +40,12 @@
       text-transform: uppercase;
       color: $White;
       margin-bottom: 40px;
+
+      @include media-between(xs, xl) {
+        font-size: font-scale(40px);
+        line-height: 100%; /* 40px */
+        margin-bottom: 20px;
+      }
     }
 
     h2 {
@@ -33,6 +53,10 @@
       font-size: font-scale(22px);
       line-height: 110%;
       color: $White;
+
+      @include media-between(xs, xl) {
+        font-size: font-scale(18px);
+      }
     }
   }
 
@@ -44,6 +68,14 @@
     border-radius: 7px;
     background: rgb(255, 255, 255);
     padding: 60px 40px;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 50px;
+      padding: 60px 20px 20px;
+      margin-bottom: 60px;
+    }
 
     &__login_title {
       color: $Black;
@@ -112,7 +144,7 @@
     }
 
 
-    &__login_title {
+    &__pass_title {
       display: flex;
       margin-bottom: 10px;
       color: $Black;

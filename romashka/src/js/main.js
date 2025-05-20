@@ -7,6 +7,7 @@ import {fromSendCheckCheckbox} from "./parts/main-page";
 document.addEventListener("DOMContentLoaded", function () {
     headerPopup();
     fromSendCheckCheckbox();
+    har4();
 })
 
 
