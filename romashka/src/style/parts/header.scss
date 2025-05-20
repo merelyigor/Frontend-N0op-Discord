@@ -12,6 +12,11 @@ header {
     padding: 20px 0;
     align-items: center;
 
+    @include media-between(sx, xl) {
+      width: 100%;
+      margin: 0 20px;
+    }
+
     .logo__wrapper {
       img {
         width: 150px;
@@ -36,6 +41,10 @@ header {
         text-align: center;
         border-radius: 4px;
         background: $Grey;
+
+        @include media-between(xs, xl) {
+          width: 90px;
+        }
       }
 
       &__lang_switcher {

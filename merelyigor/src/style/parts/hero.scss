@@ -8,16 +8,31 @@
   background: url(../img/hero-block.jpeg) no-repeat top center;
   background-size: cover;
 
+  @include media-between(xs, xl) {
+    height: 100%;
+    max-height: 100%;
+  }
+
   &__container {
     width: $container-size-base;
     height: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+      flex-direction: column;
+      padding: 50px 20px 0;
+    }
   }
 
   &__left {
     width: 55%;
     align-self: center;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+    }
 
     h1 {
       font-weight: 700;
@@ -26,6 +41,12 @@
       text-transform: uppercase;
       color: $White;
       margin-bottom: 40px;
+
+      @include media-between(xs, xl) {
+        font-size: font-scale(40px);
+        line-height: 100%; /* 40px */
+        margin-bottom: 20px;
+      }
     }
 
     h2 {
@@ -33,6 +54,10 @@
       font-size: font-scale(22px);
       line-height: 110%;
       color: $White;
+
+      @include media-between(xs, xl) {
+        font-size: font-scale(18px);
+      }
     }
   }
 
@@ -44,6 +69,14 @@
     border-radius: 7px;
     background: $White;
     padding: 60px 40px;
+
+    @include media-between(xs, xl) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 50px;
+      padding: 60px 20px 20px;
+      margin-bottom: 60px;
+    }
 
     &__login_title {
       color: $Black;
@@ -75,6 +108,7 @@
 
     .custom-checkbox {
       display: flex;
+      align-items: center;
 
       input[type="checkbox"] {
         display: none;
@@ -82,7 +116,7 @@
 
       label {
         display: flex;
-        width: 35px;
+        width: 20px;
         height: 20px;
         border: 2px solid $Grey-Grey;
         background-color: $White;
@@ -90,6 +124,7 @@
         vertical-align: middle;
         position: relative;
         margin-right: 15px;
+        flex-shrink: 0;
 
         &.error {
           border: 2px solid $Red;
