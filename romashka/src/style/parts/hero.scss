@@ -11,7 +11,6 @@
   @include media-between(xs, xl) {
     height: 100%;
     max-height: 100%;
-    padding: 50px 20px 65px;
   }
 
   &__container {
@@ -19,9 +18,11 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+
     @include media-between(xs, xl) {
       width: 100%;
       flex-direction: column;
+      padding: 50px 20px 0;
     }
   }
 
@@ -35,7 +36,7 @@
 
     h1 {
       font-weight: 700;
-      font-size: font-scale(72px);
+      font-size: font-scale(60px);
       line-height: 100%;
       text-transform: uppercase;
       color: $White;
@@ -107,6 +108,7 @@
 
     .custom-checkbox {
       display: flex;
+      align-items: center;
 
       input[type="checkbox"] {
         display: none;
@@ -114,7 +116,7 @@
 
       label {
         display: flex;
-        width: 35px;
+        width: 20px;
         height: 20px;
         border: 2px solid $Grey-Grey;
         background-color: $White;
@@ -122,7 +124,7 @@
         vertical-align: middle;
         position: relative;
         margin-right: 15px;
-
+        flex-shrink: 0;
         &.error {
           border: 2px solid $Red;
           animation: shake 2s ease;
