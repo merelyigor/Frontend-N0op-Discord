@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypto Wallet</title>
+    <base href="https://merelyigor.github.io//Frontend-N0op-Discord/noopOG/">
+    <base href="http://localhost:63342/Frontend-N0op-Discord/noopOG/">
     <link rel="stylesheet" href="./dist/css/style.min.css">
 
 </head>
@@ -15,14 +17,42 @@
         <div class="logo__wrapper">
             <img src="./src/img/logo.png" alt="logo">
         </div>
+        <div class="menu__user">
+            <div class="menu__user__wallet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 7V5C20 3.897 19.103 3 18 3H5C3.346 3 2 4.346 2 6V18C2 20.201 3.794 21 5 21H20C21.103 21 22 20.103 22 19V9C22 7.897 21.103 7 20 7ZM18 16H16V12H18V16ZM5 7C4.74252 6.98848 4.49941 6.87809 4.32128 6.69182C4.14315 6.50554 4.04373 6.25774 4.04373 6C4.04373 5.74226 4.14315 5.49446 4.32128 5.30818C4.49941 5.12191 4.74252 5.01152 5 5H18V7H5Z" fill="#FF3334"/>
+                </svg>
+                My Wallet
+            </div>
+            <div class="menu__user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <g opacity="0.2" clip-path="url(#clip0_1_65)">
+                        <path d="M18.5185 17.0087C17.5423 15.4357 15.3931 13.75 11 13.75C6.60688 13.75 4.45913 15.4344 3.48151 17.0087C4.38224 18.138 5.52602 19.0495 6.82772 19.6756C8.12943 20.3017 9.55556 20.6262 11 20.625C12.4445 20.6262 13.8706 20.3017 15.1723 19.6756C16.474 19.0495 17.6178 18.138 18.5185 17.0087Z" fill="#010101"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.375C12.094 12.375 13.1432 11.9404 13.9168 11.1668C14.6904 10.3932 15.125 9.34402 15.125 8.25C15.125 7.15598 14.6904 6.10677 13.9168 5.33318C13.1432 4.5596 12.094 4.125 11 4.125C9.90598 4.125 8.85677 4.5596 8.08318 5.33318C7.3096 6.10677 6.875 7.15598 6.875 8.25C6.875 9.34402 7.3096 10.3932 8.08318 11.1668C8.85677 11.9404 9.90598 12.375 11 12.375Z" fill="#010101"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1.375C8.44729 1.375 5.99913 2.38906 4.1941 4.1941C2.38906 5.99913 1.375 8.44729 1.375 11C1.375 13.5527 2.38906 16.0009 4.1941 17.8059C5.99913 19.6109 8.44729 20.625 11 20.625C13.5527 20.625 16.0009 19.6109 17.8059 17.8059C19.6109 16.0009 20.625 13.5527 20.625 11C20.625 8.44729 19.6109 5.99913 17.8059 4.1941C16.0009 2.38906 13.5527 1.375 11 1.375ZM0 11C0 8.08262 1.15893 5.28473 3.22183 3.22183C5.28473 1.15893 8.08262 0 11 0C13.9174 0 16.7153 1.15893 18.7782 3.22183C20.8411 5.28473 22 8.08262 22 11C22 13.9174 20.8411 16.7153 18.7782 18.7782C16.7153 20.8411 13.9174 22 11 22C8.08262 22 5.28473 20.8411 3.22183 18.7782C1.15893 16.7153 0 13.9174 0 11Z" fill="#010101"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_65">
+                            <rect width="22" height="22" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="menu__user__info__wrapper">
+                    <div class="name">Genadiy Matumba</div>
+                    <div class="id">id123456789</div>
+                </div>
+            </div>
+        </div>
         <div class="menu__top">
-            <a href="" class="menu__top__button">Login</a>
+            <a href="" class="menu__top__button user-logged-in">Sign Out</a>
             <div class="menu__top__lang_switcher">
                 <span>EN</span>
                 <div class="menu__top__lang_switcher__popup" style="display: none;">
                     <a href="" class="menu__top__lang_switcher__popup__item active">EN</a>
-                    <a href="http://localhost:63342/Frontend-N0op-Discord/noopOG/index-fr.html" class="menu__top__lang_switcher__popup__item">FR</a>
-                    <a href="http://localhost:63342/Frontend-N0op-Discord/noopOG/index-de.html" class="menu__top__lang_switcher__popup__item">DE</a>
+                    <a href="index-fr.html"
+                       class="menu__top__lang_switcher__popup__item">FR</a>
+                    <a href="index-de.html"
+                       class="menu__top__lang_switcher__popup__item">DE</a>
                 </div>
             </div>
         </div>
