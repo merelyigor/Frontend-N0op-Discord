@@ -7,5 +7,3 @@
 ## [noopOG](https://merelyigor.github.io/Frontend-N0op-Discord/noopOG/)
 
 ## [romashka](https://merelyigor.github.io/Frontend-N0op-Discord/romashka/)
-
-## [har4ick](https://merelyigor.github.io/Frontend-N0op-Discord/har4ick/)
