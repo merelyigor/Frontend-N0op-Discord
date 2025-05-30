@@ -476,7 +476,7 @@ header .container .menu__user__info .id {
   }
 }
 .footer p {
-  color: rgba(196, 196, 196, 0.5);
+  color: rgb(43, 45, 48);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -493,7 +493,7 @@ header .container .menu__user__info .id {
   line-height: 100%; /* 24px */
 }
 .footer__text {
-  color: rgba(196, 196, 196, 0.5);
+  color: rgb(43, 45, 48);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
