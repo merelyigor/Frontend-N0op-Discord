@@ -47,8 +47,8 @@ header {
         &.user-logged-in {
           color: $Red;
           border: 2px solid $Red;
-
-
+          user-select: auto;
+          pointer-events: auto;
         }
 
         @include media-between(xs, xl) {
@@ -160,10 +160,11 @@ header {
         border-left: 1px solid $Black-50;
         user-select: none;
 
-       > svg {
-      margin-right: 10px;
+        > svg {
+          margin-right: 10px;
         }
       }
+
       &__info {
         display: flex;
         align-items: center;
@@ -174,6 +175,7 @@ header {
         > svg {
           margin-right: 15px;
         }
+
         .name {
           color: $Black;
           font-size: 14px;
