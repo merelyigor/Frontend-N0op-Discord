@@ -46,6 +46,8 @@ header {
         &.user-logged-in {
           color: $Red;
           border: 2px solid $Red;
+          user-select: auto;
+          pointer-events: auto;
         }
 
         @include media-between(xs, xl) {
