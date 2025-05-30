@@ -17,9 +17,12 @@ module.exports = (env, argv) => {
 
     return {
         mode: isProduction ? 'production' : 'development',
-        entry: './src/js/main.js',
+        entry: {
+            main: './src/js/main.js',
+            cabinet: './src/js/cabinet.js'
+        },
         output: {
-            filename: 'js/main.min.js',
+            filename: 'js/[name].min.js',
             path: outputDir,
             clean: true
         },
@@ -37,7 +40,7 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'css/style.min.css'
+                filename: 'css/[name].min.css'
             }),
         ],
         optimization: {
