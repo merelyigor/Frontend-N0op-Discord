@@ -4,6 +4,7 @@ header {
   max-height: 70px;
   display: flex;
   justify-content: center;
+  background-color: $White;
 
   .container {
     width: $container-size-base;
@@ -48,6 +49,8 @@ header {
         &.user-logged-in {
           color: $Red;
           border: 2px solid $Red;
+          user-select: auto;
+          pointer-events: auto;
         }
 
 
