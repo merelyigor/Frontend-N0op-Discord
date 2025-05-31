@@ -6,10 +6,14 @@ $container-size-base: 1170px !default;
 /*************** color constants **************/
 $White: #FFF !default;
 $Black: #010101 !default;
+$Black-50: rgba(0,0,0,0.05) !default;
+$Black-40: rgba(0,0,0,0.4) !default;
 $Grey: #F5F5F5FF !default;
 $Grey-Grey: #C4C4C4 !default;
+$Border-Grey-1: #E2E2E2 !default;
 $Grey-Grey-2: rgba(196, 196, 196, 0.5) !default;
 $Red: #FF3334FF !default;
+$Cabinet-bg: linear-gradient(90deg, #EDEDED 0%, #F5F5F5 100%) !default;
 
 /*************** function ****************/
 /*

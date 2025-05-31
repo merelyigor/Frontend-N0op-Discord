@@ -6,30 +6,125 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypto Wallet</title>
-    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <base href="http://localhost:63342/Frontend-N0op-Discord/Bobrado/">
+    <base href="https://merelyigor.github.io/Frontend-N0op-Discord/Bobrado/">
+    <link rel="stylesheet" href="./dist/css/cabinet.min.css">
 
 </head>
-<body>
+<body class="cabinet-bg">
 <header>
     <div class="container">
         <div class="logo__wrapper">
             <img src="./src/img/logo.png" alt="logo">
         </div>
+        <div class="menu__user">
+            <div class="menu__user__wallet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                    <path d="M18 4V2C18 0.897 17.103 0 16 0H3C1.346 0 0 1.346 0 3V15C0 17.201 1.794 18 3 18H18C19.103 18 20 17.103 20 16V6C20 4.897 19.103 4 18 4ZM16 13H14V9H16V13ZM3 4C2.74252 3.98848 2.49941 3.87809 2.32128 3.69182C2.14315 3.50554 2.04373 3.25774 2.04373 3C2.04373 2.74226 2.14315 2.49446 2.32128 2.30818C2.49941 2.12191 2.74252 2.01152 3 2H16V4H3Z"
+                          fill="#FF3334"/>
+                </svg>
+                My Wallet
+            </div>
+            <div class="menu__user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <g opacity="0.2" clip-path="url(#clip0_1_65)">
+                        <path d="M18.5185 17.0087C17.5423 15.4357 15.3931 13.75 11 13.75C6.60688 13.75 4.45913 15.4344 3.48151 17.0087C4.38224 18.138 5.52602 19.0495 6.82772 19.6756C8.12943 20.3017 9.55556 20.6262 11 20.625C12.4445 20.6262 13.8706 20.3017 15.1723 19.6756C16.474 19.0495 17.6178 18.138 18.5185 17.0087Z"
+                              fill="#010101"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M11 12.375C12.094 12.375 13.1432 11.9404 13.9168 11.1668C14.6904 10.3932 15.125 9.34402 15.125 8.25C15.125 7.15598 14.6904 6.10677 13.9168 5.33318C13.1432 4.5596 12.094 4.125 11 4.125C9.90598 4.125 8.85677 4.5596 8.08318 5.33318C7.3096 6.10677 6.875 7.15598 6.875 8.25C6.875 9.34402 7.3096 10.3932 8.08318 11.1668C8.85677 11.9404 9.90598 12.375 11 12.375Z"
+                              fill="#010101"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M11 1.375C8.44729 1.375 5.99913 2.38906 4.1941 4.1941C2.38906 5.99913 1.375 8.44729 1.375 11C1.375 13.5527 2.38906 16.0009 4.1941 17.8059C5.99913 19.6109 8.44729 20.625 11 20.625C13.5527 20.625 16.0009 19.6109 17.8059 17.8059C19.6109 16.0009 20.625 13.5527 20.625 11C20.625 8.44729 19.6109 5.99913 17.8059 4.1941C16.0009 2.38906 13.5527 1.375 11 1.375ZM0 11C0 8.08262 1.15893 5.28473 3.22183 3.22183C5.28473 1.15893 8.08262 0 11 0C13.9174 0 16.7153 1.15893 18.7782 3.22183C20.8411 5.28473 22 8.08262 22 11C22 13.9174 20.8411 16.7153 18.7782 18.7782C16.7153 20.8411 13.9174 22 11 22C8.08262 22 5.28473 20.8411 3.22183 18.7782C1.15893 16.7153 0 13.9174 0 11Z"
+                              fill="#010101"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_65">
+                            <rect width="22" height="22" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="menu__user__info__wrapper">
+                    <div class="name">Genadiy Batumba</div>
+                    <div class="id">id033527415</div>
+                </div>
+            </div>
+        </div>
         <div class="menu__top">
-            <a href="" class="menu__top__button">Login</a>
+            <a href="" class="menu__top__button user-logged-in">Sign Out</a>
             <div class="menu__top__lang_switcher">
                 <span>EN</span>
                 <div class="menu__top__lang_switcher__popup" style="display: none">
                     <a href="" class="menu__top__lang_switcher__popup__item active">EN</a>
-                    <a href="http://localhost:63342/Frontend-N0op-Discord/Bobrado/index-fr.html"
+                    <a href="index-fr.html"
                        class="menu__top__lang_switcher__popup__item">FR</a>
-                    <a href="http://localhost:63342/Frontend-N0op-Discord/Bobrado/index-de.html"
+                    <a href="index-de.html"
                        class="menu__top__lang_switcher__popup__item">DE</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<main class="main__cabinet">
+    <div class="main__cabinet__left">
+        <h2>Blockchain Privacy Policy</h2>
+        <p>Privacy is of utmost importance at the Blockchain group of companies (“Blockchain”). We recognise the
+            significance of protecting information which is stored on our servers or network or is intended to be stored
+            on our servers or network and which relates to an individual. The data we protect are the “Personal Data”
+            which is any information relating to an identified or identifiable natural person, sometimes called a data
+            subject, and have made protecting the privacy and the confidentiality of Personal Data a fundamental
+            component of the way we do business. This Privacy Policy informs you of the ways we work to ensure privacy
+            and the confidentiality of Personal Data and describes the information we gather, how we use those Personal
+            Data and the circumstances under which we disclose such information to third-parties.
+        </p>
+    </div>
+    <div class="main__cabinet__right">
+        <div class="main__cabinet__right__wrapper">
+            <div class="main__cabinet__right__header">
+                <p>
+                    RECOVERY ACCOUNT (id123456789)
+                </p>
+                <img src="./src/img/bitcoin.svg" alt="bitcoin">
+            </div>
+            <div class="main__cabinet__right__content">
+                <div class="main__cabinet__right__content__total_balance">
+                    <div class="left"><p>Total Balance</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="30" viewBox="0 0 128 30"
+                             fill="none">
+                            <path opacity="0.05"
+                                  d="M17.1 13.6937L0 26.6667V37H126V0L112.5 7.92793L101.7 0L83.7 13.6937L70.2 11.5315L54 23.0631L45.9 13.6937L36.9 18.7387H23.4L17.1 13.6937Z"
+                                  fill="#5ECB98"/>
+                            <path d="M1 29L18.1 15.8649L24.4 20.973H37.9L46.9 15.8649L55 25.3514L71.2 13.6757L84.7 15.8649L102.7 2L113.5 10.027L127 2"
+                                  stroke="#5ECB98" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="middle">
+                        <p>
+                            Bitcoin
+                            <br>
+                            <span>12000.00</span>
+                        </p>
+                        <p>
+                            USD
+                            <br>
+                            <span>$ 8990.00</span>
+                        </p>
+                        <div class="right">
+                            <div class="wrap">
+                                <p>Request withdrawal</p>
+                                <a href="#">Send</a>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="73" viewBox="0 0 78 73"
+                                 fill="none">
+                                <path d="M76.9819 51.2417C77.2305 52.0402 77.1549 52.9045 76.7715 53.6478C76.3881 54.3911 75.7277 54.9537 74.9329 55.2141L20.2726 72.6435C19.4738 72.8973 18.607 72.8236 17.8625 72.4387C17.118 72.0537 16.5568 71.3889 16.3022 70.5904L15.328 67.5352L69.9398 50.1213L58.6207 14.6237L41.3144 44.2079L2.26758 26.5764L0.816419 22.0254C0.559839 21.2207 0.633418 20.3471 1.02097 19.5967C1.40852 18.8463 2.07831 18.2805 2.88297 18.024L57.4947 0.610074C58.2994 0.353496 59.173 0.427073 59.9235 0.814627C60.6739 1.20218 61.2396 1.87196 61.4962 2.67662L76.9819 51.2417ZM9.16858 22.7046L38.712 36.0464L55.0789 8.06536L9.16858 22.7046ZM5.39026 57.3341L29.6622 49.5946L31.597 55.6626L7.32514 63.4021L5.39026 57.3341ZM0.553071 42.1642L15.723 37.327L17.6579 43.395L2.48795 48.2322L0.553071 42.1642Z"
+                                      fill="#E12626"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 <footer class="footer">
     <div class="footer__container">
         <p>Contact Us</p>
@@ -54,6 +149,6 @@
     </div>
 </footer>
 
-<script src="./dist/js/main.min.js" type="text/javascript"></script>
+<script src="./dist/js/cabinet.min.js" type="text/javascript"></script>
 </body>
 </html>

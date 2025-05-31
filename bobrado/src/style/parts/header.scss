@@ -3,6 +3,7 @@ header {
   justify-content: center;
   width: 100%;
   max-height: 70px;
+  background-color: $White;
 
   .container {
     width: $container-size-base;
@@ -11,10 +12,11 @@ header {
     padding: 20px 0;
     align-items: center;
 
-    @include media-between(xs,xl) {
+    @include media-between(xs, xl) {
       width: 100%;
       margin: 0 20px;
     }
+
     .logo__wrapper {
       img {
         width: 150px;
@@ -41,7 +43,14 @@ header {
         pointer-events: none;
         user-select: none;
 
-        @include media-between(xs,xl) {
+        &.user-logged-in {
+          color: $Red;
+          border: 2px solid $Red;
+          user-select: auto;
+          pointer-events: auto;
+        }
+
+        @include media-between(xs, xl) {
           width: 90px;
         }
       }
@@ -52,6 +61,7 @@ header {
         align-items: center;
 
         position: relative;
+
         span {
           cursor: pointer;
           color: $Red;
@@ -85,7 +95,7 @@ header {
           border-radius: 4px;
           box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.05);
 
-          @include media-between(xs,xl) {
+          @include media-between(xs, xl) {
             left: -200%;
 
           }
@@ -94,7 +104,7 @@ header {
             content: "";
             width: 20px;
             height: 20px;
-            background-color: $White;   // $White //
+            background-color: $White; // $White //
             position: absolute;
             top: -10px;
             left: 25%;
@@ -102,7 +112,7 @@ header {
             box-shadow: -3px 0 6px -5px rgba(0, 0, 0, 0.2), // ліва грань//
             0 -3px 6px -5px rgba(0, 0, 0, 0.2); //права грань//
 
-            @include media-between(xs,xl) {
+            @include media-between(xs, xl) {
               left: 65%;
             }
 
@@ -124,8 +134,62 @@ header {
             }
 
           }
-          }
+        }
+      }
+    }
+
+    .menu__user {
+      display: flex;
+      height: 40px;
+
+      &__wallet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+        color: $Red;
+        font-size: font-scale(14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 14px */
+        letter-spacing: 0.7px;
+        border-right: 1px solid $Black-50;
+        border-left: 1px solid $Black-50;
+        user-select: none;
+
+        >svg {
+          margin-right: 10px;
+        }
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+
+        >svg {
+          margin-right: 15px;
+        }
+
+        .name {
+          color: $Black;
+          font-size: font-scale(14px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%; /* 14px */
+          letter-spacing: 0.7px;
+        }
+
+        .id {
+          color: $Black-40;
+          font-size: font-scale(14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 14px */
+          letter-spacing: 0.7px;
+          margin-top: 5px;
         }
       }
     }
   }
+}
