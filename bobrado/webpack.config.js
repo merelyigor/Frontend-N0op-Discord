@@ -20,6 +20,7 @@ module.exports = (env, argv) => {
         entry: {
             main: './src/js/main.js',
             cabinet: './src/js/cabinet.js',
+            test: './src/test/test.js',
         },
         output: {
             filename: 'js/[name].min.js',
