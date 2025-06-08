@@ -16,10 +16,10 @@
     position: relative;
 
     &:before {
-      content: '';
       display: block;
       width: 9999999%;
       height: 100%;
+      content: "";
       background-color: $White;
       position: absolute;
       right: 99%;
@@ -34,6 +34,7 @@
       font-weight: 700;
       line-height: 120%; /* 33.6px */
       margin-bottom: 25px;
+
     }
 
     p {
@@ -46,8 +47,9 @@
     }
   }
 
+
   &__right {
-    width: 63%;
+    width: 62%;
     padding: 95px 0 95px 95px;
 
     &__wrapper {
@@ -70,7 +72,7 @@
 
       p {
         color: $Black;
-        font-size: font-scale(14px);
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
@@ -85,6 +87,7 @@
       img {
         width: 45px;
         height: 45px;
+
       }
     }
 
@@ -97,5 +100,6 @@
         display: flex;
       }
     }
+
   }
 }
