@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: Inter;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background-color: #EAEFF9;
+  background-image: url(../src/img-marathon/Headphones-image-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #EAEFF9;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      margin: 0 0 0 120px;
+      width: auto;
+      height: auto;
+      max-height: 40px; // підбери під розмір лого
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    margin-top: 64px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          display: inline-block; // щоб працювали відступи
+          text-decoration: none;
+          color: #292929;
+          font-weight: bold;
+          font-size: 18px;
+          cursor: default;
+          margin-left: 120px;
+          margin-right: auto;
+
+          &:first-child a {
+            margin-top: 64px;
+          }
+
+
+          &:not(:first-child) a {
+            margin-top: 32px;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
