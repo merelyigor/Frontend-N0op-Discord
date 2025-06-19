@@ -1,4 +1,4 @@
-export function fromSendCheckCheckbox() {
+export function formSendCheckCheckbox() {
     document.querySelector(".hero__right form")
         .addEventListener("submit", function (event) {
             const checkbox = document.querySelector("#checkbox-1");
