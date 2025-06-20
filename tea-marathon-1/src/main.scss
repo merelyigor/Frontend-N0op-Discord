@@ -3,9 +3,19 @@
 * {
   font-family: Inter;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 body {
   margin: 0;
+}
+
+
+section {
+  height: 800px;
 }
 
 .header {
@@ -72,7 +82,7 @@ body {
         }
 
         a {
-          display: inline-block; // щоб працювали відступи
+          display: inline-block;
           text-decoration: none;
           color: #292929;
           font-weight: bold;
