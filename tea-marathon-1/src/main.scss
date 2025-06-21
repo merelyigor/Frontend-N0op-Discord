@@ -40,6 +40,16 @@ section {
 
 
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-95%);
+
+  transition: transform 0.5s;
+
+
+
   height: 100vh;
   width: 100%;
   display: flex;
@@ -48,6 +58,10 @@ section {
   background-color: #EAEFF9;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+
+  .menu:target {
+    transform: translateX(-5%);
+  }
 
   &__top {
     display: flex;
